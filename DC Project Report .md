@@ -108,11 +108,11 @@ Feature extraction is performed using a pretrained Vision Transformer (ViT) mode
 **Visualisations :** 
 
 <p align="center">
-  <img src="Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.015.jpeg" alt="Image 1">
+  <img src="images/Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.015.jpeg" alt="Image 1">
 </p>
 
 <p align="center">
-  <img src="Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.016.jpeg" alt="Image 2">
+  <img src="images/Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.016.jpeg" alt="Image 2">
 </p>
 
 
@@ -121,15 +121,15 @@ Feature extraction is performed using a pretrained Vision Transformer (ViT) mode
 The first image on the left ->test image predicted.The next four images are reference samples  from  the  training  set  of  the  same  class,  visually  confirming  the  model's prediction.
 
 <p align="center">
-  <img src="Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.017.jpeg" alt="Centered Image">
+  <img src="images/Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.017.jpeg" alt="Centered Image">
 </p>
 
 <p align="center">
-  <img src="Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.018.png" alt="Image 1">
+  <img src="images/Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.018.png" alt="Image 1">
 </p>
 
 <p align="center">
-  <img src="Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.019.png" alt="Image 2">
+  <img src="images/Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.019.png" alt="Image 2">
 </p>
 
 # **A Comparitive Study :**
@@ -157,9 +157,9 @@ The first image on the left ->test image predicted.The next four images are refe
 **Test Predictions:** 
 
 <p align="center">
-  <img src="Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.023.png" alt="Image 1" style="margin-right: 20px;">
-  <img src="Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.024.png" alt="Image 2" style="margin-right: 20px;">
-  <img src="Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.025.png" alt="Image 3">
+  <img src="images/Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.023.png" alt="Image 1" style="margin-right: 20px;">
+  <img src="images/Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.024.png" alt="Image 2" style="margin-right: 20px;">
+  <img src="images/Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.025.png" alt="Image 3">
 </p>
 
 
