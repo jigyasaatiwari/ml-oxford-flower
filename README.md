@@ -1,12 +1,7 @@
-# **Global vs Grid: A Comparative Study of Feature Extraction in Image Classification**
-
-## DESIGN CREDIT PROJECT
-**INSTRUCTOR : Professor Pratik Mazumder**
-
+# **Global vs Grid: A Comparative Study incase of Image Classification**
 
 
 **V NIRANJANA (B23CH1046) JIGYASA TIWARI (B23EE1029)**
-
 
 
 This project presents a comparative study of global versus grid-based feature extraction methods in image classification. Leveraging a fixed pretrained deep learning model, we extract features from both the entire image and from local grids within each image. 
