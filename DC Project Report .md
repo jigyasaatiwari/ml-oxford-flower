@@ -1,12 +1,13 @@
-﻿![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.001.png)
+# **Global vs Grid: A Comparative Study of Feature Extraction in Image Classification**
 
-**DESIGN CREDIT** 
+## DESIGN CREDIT PROJECT
+**INSTRUCTOR : Professor Pratik Mazumder**
 
-**PROJECT**
-## **INSTRUCTOR : Professor Pratik Mazumder**
+
+
 **V NIRANJANA (B23CH1046) JIGYASA TIWARI (B23EE1029)**
 
-**Global vs Grid: A Comparative Study of Feature Extraction in Image Classification**
+
 
 This project presents a comparative study of global versus grid-based feature extraction methods in image classification. Leveraging a fixed pretrained deep learning model, we extract features from both the entire image and from local grids within each image. 
 
@@ -21,7 +22,6 @@ These features are then evaluated using standard classifiers, allowing us to dir
 - Test Data: Unlabeled images for final predictions (exact count unspecified)
 - cat\_to\_name.json: Maps numeric labels (1-102) to flower names
 
-2![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.003.png)
 ## **Animal Image Classification Dataset**
 ![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.004.png)
 ### **Animal Dataset Overview**
@@ -35,7 +35,7 @@ The success of feature extraction hinges on using models pretrained on large- sc
 
 ![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.005.png)
 ## **Key Components:**
-#### 1\.**ViTImageProcessor**
+## 1\.**ViTImageProcessor**
 - Acts as the bridge between image data and machine learning models.
 - Resizing: All images → 224×224 pixels
 
@@ -56,29 +56,36 @@ Feature extraction is performed using a pretrained Vision Transformer (ViT) mode
 
 ![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.009.png)
 
+**Global Feature Extraction :** 
+
 ![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.010.jpeg)
 
-2
+
 
 **Grid Feature Extraction :** 
 
 ![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.011.png)
 
-**Code Execution in Flower Dataset :** 
-### **feature extraction → classifier training → model evaluation**
-After feature extraction, the process moves to training and evaluating machine learning classifiers using the extracted features:
-## **Classifier Training:**
-- Base Models:
-  - Logistic Regression (max\_iter=1000)
-  - Decision Tree (default params)
-- Extended Models:
-  - Support Vector Machine (SVM)
-  - Ridge Classifier
-  - Random Forest (n\_estimators=100)
+# **Code Execution in Flower Dataset :**
+<div align="center">
+
+### feature extraction → classifier training → model evaluation
+
+</div>
+
+## Classifier Training:
+
+### Base Models:
+- **Logistic Regression** (max_iter=1000)
+- **Decision Tree** (default params)
+
+### Extended Models:
+- **Support Vector Machine (SVM)**
+- **Ridge Classifier**
+- **Random Forest** (n_estimators=100)
+
 
 ![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.012.png)
-
-4
 
 - The  classifiers  learn  to  associate  patterns  in  the  feature  vectors  with specific image classes during training.
 - Once  trained,  the  models  are  evaluated  on  a  separate  validation  set  to measure how accurately they can predict the class of unseen images.
@@ -100,21 +107,31 @@ After feature extraction, the process moves to training and evaluating machine l
 
 **Visualisations :** 
 
-4![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.015.jpeg)
+<p align="center">
+  <img src="Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.015.jpeg" alt="Image 1">
+</p>
 
-![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.016.jpeg)
+<p align="center">
+  <img src="Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.016.jpeg" alt="Image 2">
+</p>
+
 
 **Test Images predicted :** 
 
 The first image on the left ->test image predicted.The next four images are reference samples  from  the  training  set  of  the  same  class,  visually  confirming  the  model's prediction.
 
-![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.017.jpeg)
+<p align="center">
+  <img src="Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.017.jpeg" alt="Centered Image">
+</p>
 
-![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.018.png)
+<p align="center">
+  <img src="Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.018.png" alt="Image 1">
+</p>
 
-![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.019.png)
+<p align="center">
+  <img src="Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.019.png" alt="Image 2">
+</p>
 
-5
 # **A Comparitive Study :**
 ## **Change in Dataset :**
 - Using Animal Classification Dataset, smaller scale with low class counts to check computational efficiency.
@@ -124,7 +141,13 @@ The first image on the left ->test image predicted.The next four images are refe
 
 **Observations :** 
 
-**Feature Type Classifier Validation Accuracy ![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.020.png)**Global Logistic Regression 99.67% Global Decision Tree 95.22% Grid (2x2) Logistic Regression 99.78% Grid (2x2) Decision Tree 91.56%
+| Feature Type   | Classifier          | Validation Accuracy |
+|----------------|---------------------|--------------------|
+| Global         | Logistic Regression | 99.67%             |
+| Global         | Decision Tree       | 95.22%             |
+| Grid (2x2)     | Logistic Regression | 99.78%             |
+| Grid (2x2)     | Decision Tree       | 91.56%             |
+
 
 ![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.021.jpeg) 4
 
@@ -133,7 +156,12 @@ The first image on the left ->test image predicted.The next four images are refe
 
 **Test Predictions:** 
 
-![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.023.png)  ![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.024.png)![](Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.025.png)
+<p align="center">
+  <img src="Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.023.png" alt="Image 1" style="margin-right: 20px;">
+  <img src="Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.024.png" alt="Image 2" style="margin-right: 20px;">
+  <img src="Aspose.Words.4bf1bbdf-2e8c-455f-b820-a4b4aeb0c024.025.png" alt="Image 3">
+</p>
+
 
 **Results Observed :** 
 
@@ -144,6 +172,4 @@ Across both datasets the accuracy difference b/w global and grid-based features 
 - Logistic  Regression  performs  well  with  compact  global  features,  whereas Decision  Trees  struggle  with  high-dimensional,  sparse  space  created  by  grid features.
 - ViT’s  patch-based  architecture  makes  explicit  grid-based  aggregation  largely redundant for this classification task. 4
 
-**THANK YOU** 
 
-6
